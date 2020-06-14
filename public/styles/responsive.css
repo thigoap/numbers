@@ -1,0 +1,87 @@
+/* https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+
+@media (min-width: 560px) {
+
+    /* layout */
+    body {
+        text-align: left;
+    }
+
+    /* header */
+    #headertitle {
+        margin-bottom: 16px;
+        justify-content: flex-start;
+    }
+
+    #backtext {
+        display: block;
+        font-size: 12px;
+        margin-left: 8px;
+    }
+
+    #navbar ul {
+        display: flex;
+    }
+    /* same to apply display: inline block in children 
+    #navbar li {
+        display: inline-block    
+    */
+
+    #navbar a {
+        margin-right: 32px;
+        padding: 0;
+    }
+
+    /* index */
+
+    /* contact */
+    #page-contact main {
+        padding: 32px 80px;
+    }
+
+    .field {
+        display: flex;
+    }
+    
+    .field label {
+        width: 110px;
+        display: flex;
+        align-items: center;
+        padding-bottom: 0;
+    }
+
+    input[type="text"], input[type="email"], textarea {
+        padding: 10px;
+        width: 400px;
+    }
+
+    /* footer */
+    footer {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 800px) {
+
+    /* layout */
+    body {
+        max-width: 1000px;
+        width: 90vw;
+        margin: 0 auto;
+    }
+
+    /* contact */
+    #headertitle {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #headertitle a {
+        position: unset;
+    }
+
+    #page-contact main {
+        padding: 32px 144px;
+    }
+} 

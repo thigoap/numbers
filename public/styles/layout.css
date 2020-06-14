@@ -1,0 +1,101 @@
+/* https://www.tutlane.com/example/font-icons/font-awesome-icons-examples */
+
+/* mobile first! */
+:root {
+    --hfb-color: #ededed; /* header, footer, border */
+    --bm-color: #fcfcfc; /* body, main */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+a {
+    font-weight: bold;
+    color: #7a7a7a;
+}
+
+a:hover {
+    color: #999999
+}
+
+html { 
+    font-family: 'Ubuntu', sans-serif;
+    height: 100%; /* need this to adjust footer always at bottom */
+    background: white; 
+}
+
+body {   
+    color: #404040;
+    text-align: center;
+    height: 100%; /* need this to adjust footer always at bottom */
+    background: var(--bm-color);
+}
+
+header {
+    background-color: var(--hfb-color); 
+    padding: 8px;
+}
+
+#headertitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+#headertitle a {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 16px;
+}
+
+/* #headertitle a span {
+    margin-right: 8px;
+    background-image: url('../assets/32back-arrow.png');
+    width: 32px;
+    height: 32px;
+} */
+
+#backtext {
+    display: none;
+}
+
+/* #navbar img {
+    max-height: 32px;
+    max-width: 32px;
+    margin-right: 8px;
+} */
+
+#navbar a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+} 
+
+#navbar i {
+    margin-right: 8px;
+}
+
+main {
+    background: var(--bm-color);
+}
+
+#page-contact main {
+    padding: 32px 24px;
+}
+
+footer {
+    background-color: var(--hfb-color); 
+    padding: 16px;
+    margin-top: auto; /* need this to adjust footer always at bottom */
+    text-align: center;
+    font-size: 12px;
+}

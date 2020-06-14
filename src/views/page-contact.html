@@ -1,0 +1,73 @@
+{% extends "partials/layout.html" %}
+
+{% set pageId = "page-contact" %}
+
+{% block styles %}
+    <link rel="stylesheet" href="/styles/page-contact.css">
+{% endblock styles %}
+
+<!-- body starts here -->
+{% block content %}
+
+    {% include "partials/header.html" %}
+
+    <main>
+        <h2>Contato:</h2>    
+        <form>
+            <div class="field">
+                <label for="name">Nome:</label>
+                <input type="text" name="name" id="name" placeholder="Digite seu nome" required="required">
+            </div>
+
+            <div class="field">
+                <label for="email">Email:</label>
+                <input type="text" name="email" id="email" placeholder="Digite seu email" required="required">
+            </div>
+
+            <div class="field">
+                <label for="subject">Assunto:</label>
+                <input type="text" name="subject" id="subject" placeholder="Digite o assunto" required="required">
+            </div>
+
+            <div class="field">
+                <label for="message">Mensagem:</label>
+                <textarea name="message" id="message" cols="30" rows="5" placeholder="Digite a mensagem" required="required"></textarea>
+            </div>
+
+            <!-- <div>
+                <p>Check</p>
+                <label for="check1">Check1</label>
+                <input type="checkbox" name="check" id="check1" value="check1">
+                <label for="check2">Check2</label>
+                <input type="checkbox" name="check" id="check2" value="check2">
+                <label for="check3">Check3</label>
+                <input type="checkbox" name="check" id="check3" value="check3">   
+            </div>
+
+            <div>
+                <p>Radio</p>
+                <label for="radio1">Radio1</label>
+                <input type="radio" name="radio" id="radio1" value="radio1">
+                <label for="radio2">Radio2</label>
+                <input type="radio" name="radio" id="radio2" value="radio2">
+            </div> -->
+
+            <div>
+                <button type="submit">Enviar mensagem</button>
+                
+            </div>
+        </form>   
+    </main>
+
+    {% include "partials/footer.html" %}
+
+{% endblock content %}
+
+<!-- {% block modal %}
+{% endblock modal %} -->
+
+{% block scripts %}
+    <script src="/scripts/page-contact.js"></script>
+{% endblock scripts %}
+
+<!-- body ends here -->
