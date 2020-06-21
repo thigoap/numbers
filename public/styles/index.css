@@ -9,3 +9,8 @@
 main {
     padding: 32px 24px; 
 }
+
+main li {
+    list-style: square;
+    list-style-position: inside;
+}

@@ -1,14 +1,12 @@
 # Título
 
-Webapp responsivo desenvolvido para aprimorar os conhecimentos iniciais em HTML5, CSS3 e JS. 
-
+Webapp desenvolvido para aprimorar os conhecimentos iniciais em HTML5, CSS3 e JS. 
 
 ## Tecnologias utilizadas
 - HTML 5
 - CSS 3
 - Javascript
 - Node.js
-
 
 ## Dependências (package.json)
 - "express": "^4.17.1"
@@ -26,17 +24,19 @@ Webapp responsivo desenvolvido para aprimorar os conhecimentos iniciais em HTML5
 - Iniciar a applicação:<br>
 `npm start`
 
-### Feito
+## Funcionalidades
 
-- [x] template do index, header e footer;
-- [x] responsividade para mobile, telas médias e grandes (desktops)
+#### Aleatório
+- [x] gera número aleatório entre mínimo e máximo, com ou sem repetição; 
+- [ ] adicionar funcionamento dos números desconsiderados;
+- [ ] sistema de rolagem de dados;
 
-### Em progresso
-- [ ] dar um título para a aplicação!
-- [ ] dark mode
-- [ ] template das páginas dados, timer e conversor
-- [ ] implementar funcionamento do formulário
-- [ ] implementar funcionamento das páginas dados, timer e conversor
+#### Timer
+- [ ] contagem regressiva;
+- [ ] cronômetro;
+
+#### Conversor
+- [ ] definir unidades;
 
 ### Tela Dados desenvolvida com a premissa de mobile first
 ![mobile](https://user-images.githubusercontent.com/11902225/84596295-33921c00-ae33-11ea-8486-e8d7c4322261.png)

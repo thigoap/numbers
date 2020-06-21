@@ -12,20 +12,43 @@
     {% include "partials/header.html" %}
 
     <main>
-        <strong>Timer</strong>:<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-        Saepe obcaecati repudiandae praesentium consectetur assumenda mollitia fugiat, doloremque odit, 
-        necessitatibus at quaerat eaque aut rerum odio explicabo cumque aperiam maxime hic!
+        <div id="timer-container">
+            <div class="hms-container">
+                <label for="hours">Horas</label>
+                <div id="hours-container">
+                    <input type="number" id="hours" placeholder="00" pattern=".{5,}">
+                </div>  
+            </div>
+            <div class="hms-container">
+                <label for="minutes">Minutos</label>   
+                <div id="minutes-container">
+                    <input type="number" id="minutes" placeholder="00">
+                </div>         
+            </div>
+            <div class="hms-container">
+                <label for="seconds">Segundos</label>
+                <div id="seconds-container">
+                    <input type="number" id="seconds" placeholder="00">
+                </div>
+            </div> 
+        </div>
+
+        <div class="buttons-container">
+            <button type="submit" id="startbtn" disabled="disabled">START</button>
+            <button type="reset"id="reset" disabled="disabled">RESET</button>        
+        </div>
+        
     </main>
 
     {% include "partials/footer.html" %}
 
 {% endblock content %}
 
-<!-- {% block modal %}
+{% block modal %}
 {% endblock modal %}
 
 {% block scripts %}
-    <script src="/scripts/index.js"></script>
+    <script src="/scripts/page-timer.js"></script>
 {% endblock scripts %} -->
 
 <!-- body ends here -->

@@ -6,7 +6,11 @@
     border-left: 2px solid var(--hfb-color); 
 }
 
-form > div { /* modifies all divs, children of form */
+#page-contact main {
+    padding: 24px 24px;
+}
+
+form > div { /* modifies all divs, direct children of form */
     margin: 8px 0;
 }
 

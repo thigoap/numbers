@@ -25,9 +25,9 @@ server.get("/contact", (req, res) => {
     return res.render("page-contact.html", { back: true })
 })
 
-//dice
-server.get("/dice", (req, res) => {
-    return res.render("page-dice.html", { back: true })
+//random
+server.get("/random", (req, res) => {
+    return res.render("page-random.html", { back: true })
 })
 
 //timer
