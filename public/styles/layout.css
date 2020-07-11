@@ -79,13 +79,6 @@ header {
     right: 16px;
 }
 
-/* #headertitle a span {
-    margin-right: 8px;
-    background-image: url('../assets/32back-arrow.png');
-    width: 32px;
-    height: 32px;
-} */
-
 #backtext {
     display: none;
 }
@@ -120,6 +113,7 @@ footer {
     border-radius: 4px;
     padding: 4px;
     font-family: inherit;
+    min-width: 52px;
 }
 
 .buttons-container button + button { /* button immediately after button */

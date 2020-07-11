@@ -10,34 +10,34 @@ server.use(express.urlencoded({ extended: true }))
 // using template engine
 const nunjucks = require("nunjucks")
 nunjucks.configure("src/views", {
-    express: server,
-    noCache: true
+  express: server,
+  noCache: true
 })
 
 // config app routes
 //index
 server.get("/", (req, res) => {
-    return res.render("index.html")
+  return res.render("index.html")
 })
 
 //contact
 server.get("/contact", (req, res) => {
-    return res.render("page-contact.html", { back: true })
+  return res.render("page-contact.html", { back: true })
 })
 
 //random
 server.get("/random", (req, res) => {
-    return res.render("page-random.html", { back: true })
+  return res.render("page-random.html", { back: true })
 })
 
 //timer
 server.get("/timer", (req, res) => {
-    return res.render("page-timer.html", { back: true })
+  return res.render("page-timer.html", { back: true })
 })
 
 //units
 server.get("/units", (req, res) => {
-    return res.render("page-units.html", { back: true })
+  return res.render("page-units.html", { back: true })
 })
 
 

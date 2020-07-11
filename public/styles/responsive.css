@@ -32,7 +32,8 @@
 
     .buttons-container,
     .options-container,
-    .results-container {
+    .results-container,
+    .msg-container {
         display: flex;
         justify-content: center;
         align-items: center;

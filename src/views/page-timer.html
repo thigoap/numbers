@@ -3,44 +3,48 @@
 {% set pageId = "page-timer" %}
 
 {% block styles %}
-    <link rel="stylesheet" href="/styles/page-timer.css">
+  <link rel="stylesheet" href="/styles/page-timer.css">
 {% endblock styles %}
 
 <!-- body starts here -->
 {% block content %}
 
-    {% include "partials/header.html" %}
+  {% include "partials/header.html" %}
 
-    <main>
-        <div id="timer-container">
-            <div class="hms-container">
-                <label for="hours">Horas</label>
-                <div id="hours-container">
-                    <input type="number" id="hours" placeholder="00" pattern=".{5,}">
-                </div>  
-            </div>
-            <div class="hms-container">
-                <label for="minutes">Minutos</label>   
-                <div id="minutes-container">
-                    <input type="number" id="minutes" placeholder="00">
-                </div>         
-            </div>
-            <div class="hms-container">
-                <label for="seconds">Segundos</label>
-                <div id="seconds-container">
-                    <input type="number" id="seconds" placeholder="00">
-                </div>
-            </div> 
+  <main>
+    <div id="timer-container">
+      <div class="hms-container">
+        <label for="hours">Horas</label>
+        <div id="hours-container">
+          <input type="number" id="hours" placeholder="00">
+        </div>  
+      </div>
+        <div class="hms-container">
+          <label for="minutes">Minutos</label>   
+          <div id="minutes-container">
+              <input type="number" id="minutes" placeholder="00">
+          </div>         
         </div>
+        <div class="hms-container">
+          <label for="seconds">Segundos</label>
+          <div id="seconds-container">
+            <input type="number" id="seconds" placeholder="00">
+          </div>
+        </div> 
+    </div>
 
-        <div class="buttons-container">
-            <button type="submit" id="startbtn" disabled="disabled">START</button>
-            <button type="reset"id="reset" disabled="disabled">RESET</button>        
-        </div>
-        
-    </main>
+    <div class="buttons-container">
+      <button type="submit" id="startbtn">START</button>
+      <button type="reset"id="resetbtn" disabled="disabled">RESET</button>        
+    </div>
 
-    {% include "partials/footer.html" %}
+    <div class="msg-container">
+      <span id="msg"></span>
+    </div>
+      
+  </main>
+
+  {% include "partials/footer.html" %}
 
 {% endblock content %}
 

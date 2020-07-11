@@ -2,7 +2,7 @@
   "name": "numbers",
   "author": "thigoap",
   "version": "0.0.1",
-  "description": "Webapp responsivo desenvolvido para aprimorar os conhecimentos iniciais em HTML5, CSS3 e JS. ",
+  "description": "Webapp desenvolvido para aprimorar os conhecimentos iniciais em HTML5, CSS3 e JS. ",
   "scripts": {
     "start": "nodemon src/server.js"
   },

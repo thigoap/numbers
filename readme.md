@@ -16,29 +16,31 @@ Webapp desenvolvido para aprimorar os conhecimentos iniciais em HTML5, CSS3 e JS
 ## Funcionamento da aplicação
 
 - Clonar o repositório:<br>
-`https://github.com/appthigo/numbers.git`
+`git clone https://github.com/thigoap/numbers.git`
 
 - Instalar as dependências listadas em package.json:<br>
 `npm install`
 
-- Iniciar a applicação:<br>
-`npm start`
+- Iniciar a aplicação:<br>
+`npm start`<br>
+Acessar `localhost:3000`
 
 ## Funcionalidades
 
-#### Aleatório
-- [x] gera número aleatório entre mínimo e máximo, com ou sem repetição; 
-- [ ] adicionar funcionamento dos números desconsiderados;
-- [ ] sistema de rolagem de dados;
+#### Números Aleatórios
+- [x] gera número entre mínimo e máximo
+- [x] em ordem aleatória, crescente, ou decescente
+- [x] com ou sem repetição
+- [x] com ou sem exclusão
 
 #### Timer
-- [ ] contagem regressiva;
+- [x] contagem regressiva;
 - [ ] cronômetro;
 
 #### Conversor
 - [ ] definir unidades;
 
-### Tela Dados desenvolvida com a premissa de mobile first
-![mobile](https://user-images.githubusercontent.com/11902225/84596295-33921c00-ae33-11ea-8486-e8d7c4322261.png)
-### Tela Dados com media query para telas maiores
-![media](https://user-images.githubusercontent.com/11902225/84596294-32f98580-ae33-11ea-9303-eb03ea10b62b.png)
+### Tela de Números Aleatórios - mobile
+![random](https://user-images.githubusercontent.com/11902225/87228233-3a4e7900-c376-11ea-82ad-09a045945ada.png)
+### Tela de Números Aleatórios - desktop
+![random-lg](https://user-images.githubusercontent.com/11902225/87228232-391d4c00-c376-11ea-8772-0ed5c650d895.png)

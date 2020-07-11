@@ -3,45 +3,45 @@
 {% set pageId = "page-contact" %}
 
 {% block styles %}
-    <link rel="stylesheet" href="/styles/page-contact.css">
+  <link rel="stylesheet" href="/styles/page-contact.css">
 {% endblock styles %}
 
 <!-- body starts here -->
 {% block content %}
 
-    {% include "partials/header.html" %}
+  {% include "partials/header.html" %}
 
-    <main>
-        <h2>Contato:</h2>    
-        <form>
-            <div class="field">
-                <label for="name">Nome:</label>
-                <input type="text" name="name" id="name" placeholder="Digite seu nome" required="required">
-            </div>
+  <main>
+    <h2>Contato:</h2>    
+    <form>
+      <div class="field">
+        <label for="name">Nome:</label>
+        <input type="text" name="name" id="name" placeholder="Digite seu nome" required="required">
+      </div>
 
-            <div class="field">
-                <label for="email">Email:</label>
-                <input type="text" name="email" id="email" placeholder="Digite seu email" required="required">
-            </div>
+      <div class="field">
+        <label for="email">Email:</label>
+        <input type="text" name="email" id="email" placeholder="Digite seu email" required="required">
+      </div>
 
-            <div class="field">
-                <label for="subject">Assunto:</label>
-                <input type="text" name="subject" id="subject" placeholder="Digite o assunto" required="required">
-            </div>
+      <div class="field">
+        <label for="subject">Assunto:</label>
+        <input type="text" name="subject" id="subject" placeholder="Digite o assunto" required="required">
+      </div>
 
-            <div class="field">
-                <label for="message">Mensagem:</label>
-                <textarea name="message" id="message" cols="30" rows="5" placeholder="Digite a mensagem" required="required"></textarea>
-            </div>
+      <div class="field">
+        <label for="message">Mensagem:</label>
+        <textarea name="message" id="message" cols="30" rows="5" placeholder="Digite a mensagem" required="required"></textarea>
+      </div>
 
-            <div id="buttons-container">
-                <button type="submit">Enviar mensagem</button> 
-                <button type="reset">Limpar formulário</button>   
-            </div>
-        </form>   
-    </main>
+      <div id="buttons-container">
+        <button type="submit">Enviar mensagem</button> 
+        <button type="reset">Limpar formulário</button>   
+      </div>
+    </form>   
+  </main>
 
-    {% include "partials/footer.html" %}
+  {% include "partials/footer.html" %}
 
 {% endblock content %}
 
