@@ -1,0 +1,45 @@
+form > div { /* modifies all divs, direct children of form */
+  margin: 8px 0;
+}
+
+.field {
+  display: block;
+}
+
+.field label {
+  display: flex;
+  padding-bottom: 4px;
+}
+
+input[type="text"], input[type="email"], textarea {
+  padding: 8px;
+  width: 100%;
+}
+
+@media (min-width: 560px) {
+  main {
+    padding: 32px 80px;
+  }
+
+  .field {
+    display: flex;
+  }
+  
+  .field label {
+    width: 110px;
+    display: flex;
+    align-items: center;
+    padding-bottom: 0;
+  }
+
+  .field input[type="text"], input[type="email"], textarea {
+    padding: 10px;
+    width: 400px;
+  }
+}
+
+@media (min-width: 800px) {
+  main {
+    padding: 32px 144px;
+  }
+} 

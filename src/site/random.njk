@@ -1,0 +1,58 @@
+---
+layout: base
+title: Random
+permalink: /random/
+---
+
+<main>
+  <div class="items">
+    <div class="subitems">
+      <label for="min">Min</label>
+      <input class="rnd" type="number" id="min" placeholder="00"> 
+    </div>
+    <div class="subitems">
+      <label for="max">Max</label>
+      <input class="rnd" type="number" id="max" placeholder="00">
+    </div>
+    <div class="subitems">
+      <label for="times">Quantity</label>
+      <input class="rnd" type="number" id="times" placeholder="01">
+    </div>
+  </div>
+
+  <div class="options">
+    <p>Order:</p>
+    <div>
+      <input type="radio" name="order" id="random" value="random" checked="checked">
+      <label for="random">Random</label>
+    </div>
+    <div>
+      <input type="radio" name="order" id="ascending" value="ascending">
+      <label for="ascending">Ascendent</label>
+    </div>
+    <div>
+      <input type="radio" name="order" id="descending" value="descending">
+      <label for="descending">Descendent</label>
+    </div><br>
+    <div>
+      <input type="checkbox" id="norep" value="norep">  
+      <label for="norep">No repetition</label>
+    </div><br>
+    <div>
+      <input type="checkbox" id="exclcheck" value="exclude">  
+      <label for="exclcheck">Exclude numbers</label>
+    </div>
+    <input type="text" id="exclinput" placeholder="0, 1, 2, 3" disabled="disabled">   
+  </div>
+
+  <div class="buttons">
+    <button type="submit" id="generatebtn">GENERATE</button>       
+  </div>
+
+  <div class="res">
+    <p>Results:</p>
+    <p id="results"></p>
+  </div>
+
+</main>
+<script src="/static/scripts/random.js"></script>

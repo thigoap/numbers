@@ -1,0 +1,52 @@
+---
+layout: base
+title: Time
+permalink: /timer/
+---
+
+<main>
+  <p style="font-weight:bold">T I M E R</p>
+  <div class="items">
+    <div class="subitems">
+      <label for="hours">Hours</label>
+      <input class="tmr" type="number" id="hours" placeholder="00">
+    </div>
+    <div class="subitems">
+      <label for="minutes">Minutes</label>   
+      <input class="tmr" type="number" id="minutes" placeholder="00">        
+    </div>
+    <div class="subitems">
+      <label for="seconds">Seconds</label>
+      <input class="tmr" type="number" id="seconds" placeholder="00">
+    </div> 
+  </div>
+
+  <div class="buttons">
+    <button id="startbtn">START</button>
+    <button id="resetbtn" disabled="disabled">RESET</button>        
+  </div>
+
+  <div class="res">
+    <p id="msg">S E T U P</p>
+  </div>
+
+  <p style="font-weight:bold">S T O P W A T C H</p>
+  <div class="items">
+    <div class="lap">
+      <p class="stopwatch" id="stopwatch">00:00:00</p>
+    </div>
+  </div>
+
+  <div class="buttons">
+    <button id="lapbtn">GO</button>
+    <button id="stopbtn" disabled="disabled">STOP</button>        
+  </div>
+
+  <div class="res">
+    <p class="lapmsg" id="lapmsg">R E A D Y</p>
+    <ul id="lapslist"></ul>
+  </div>  
+    
+</main>
+<script src="/static/scripts/timer.js"></script>
+<script src="/static/scripts/stopwatch.js"></script>

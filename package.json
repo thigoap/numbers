@@ -1,16 +1,14 @@
 {
   "name": "numbers",
   "author": "thigoap",
-  "version": "0.0.1",
-  "description": "Webapp desenvolvido para aprimorar os conhecimentos iniciais em HTML5, CSS3 e JS. ",
+  "version": "0.2.0",
+  "description": "",
   "scripts": {
-    "start": "nodemon src/server.js"
+    "build": "eleventy",
+    "dev": "eleventy --serve"
   },
   "dependencies": {
-    "express": "^4.17.1",
-    "nunjucks": "^3.2.1"
+    "@11ty/eleventy": "^0.11.0"
   },
-  "devDependencies": {
-    "nodemon": "^2.0.4"
-  }
+  "devDependencies": {}
 }
