@@ -110,6 +110,7 @@ const lapPush = () => {
   let reversedLaps = lapsArray.slice().reverse()
   reversedLaps.map((lap, index) => {
     li = document.createElement('li')
+    li.style.listStyle = 'none'
     li.innerHTML = `Lap ${lapsArray.length-index}: ${lap}`
     lapsList.appendChild(li)
   })

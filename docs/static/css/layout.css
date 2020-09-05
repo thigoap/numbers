@@ -1,0 +1,123 @@
+/* placeholders */
+::-webkit-input-placeholder, /* Edge */
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: var(--hfb-color);
+}
+  
+::placeholder {
+  color: var(--hfb-color);
+}
+
+/* Chrome, Safari, Edge, Opera  - remove input number arrows */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox - remove input number arrows */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+:root {
+  --hfb-color: #ededed; /* header, footer, border */
+  --bm-color: #fcfcfc; /* body, main */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+a {
+  font-weight: bold;
+  color: #404040;
+}
+a:hover {
+  color: #999999
+}
+
+html { 
+  font-family: 'Ubuntu', sans-serif;
+  height: 100%; /* need this to adjust footer always at bottom */
+  background: white; 
+}
+
+body {  
+  display: flex;
+  flex-direction: column; 
+  color: #404040;
+  text-align: center;
+  height: 100%; /* need this to adjust footer always at bottom */
+  background: var(--bm-color);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  border-right: 2px solid var(--hfb-color); 
+  border-left: 2px solid var(--hfb-color); 
+  padding: 24px; 
+}
+
+header {
+  background-color: var(--hfb-color); 
+  padding: 8px;
+}
+
+.navbar {
+  margin-top: 4px;
+}
+
+.navbar a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+} 
+
+.navbar i {
+  margin-right: 8px;
+}
+
+main {
+  background: var(--bm-color);
+}
+
+footer {
+  background-color: var(--hfb-color); 
+  padding: 16px;
+  margin-top: auto; /* need this to adjust footer always at bottom */
+  text-align: center;
+  font-size: 12px;
+}
+
+@media (min-width: 560px) {
+  header {
+    text-align: left;
+  }
+  .navbar ul {
+    display: flex;
+  }
+  .navbar a {
+    margin-right: 32px;
+    padding: 0;
+  }
+
+  footer {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 800px) {
+  body {
+    max-width: 1000px;
+    width: 90vw;
+    margin: 0 auto;
+  }
+}

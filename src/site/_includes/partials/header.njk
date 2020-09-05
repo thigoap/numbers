@@ -1,12 +1,12 @@
 <header>
-  <h2><a href="/">Numbers</a></h2>      
+  <h2><a href="{{ '/' | url }}">Numbers</a></h2>      
   <nav class="navbar">
     <ul>
-      <li><a href="/random">
+      <li><a href="{{ '/random' | url }}">
         <i class="fas fa-dice-d6"></i>Random</a></li>
-      <li><a href="/timer">
+      <li><a href="{{ '/time' | url }}">
         <i class="fas fa-stopwatch"></i>Time</a></li>
-      <li><a href="/units">
+      <li><a href="{{ '/units' | url }}">
         <i class="fas fa-retweet"></i>Units</a></li>
     </ul>
   </nav>

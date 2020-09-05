@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <title>Numbers</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/40fd1bd135.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/numbers/static/css/layout.css">
+  <link rel="stylesheet" href="/numbers/static/css/pages.css">
+  <link rel="stylesheet" href="/numbers/static/css/index.css">
+</head> 
+
+<body>
+  <header>
+  <h2><a href="/numbers/">Numbers</a></h2>      
+  <nav class="navbar">
+    <ul>
+      <li><a href="/numbers/random">
+        <i class="fas fa-dice-d6"></i>Random</a></li>
+      <li><a href="/numbers/time">
+        <i class="fas fa-stopwatch"></i>Time</a></li>
+      <li><a href="/numbers/units">
+        <i class="fas fa-retweet"></i>Units</a></li>
+    </ul>
+  </nav>
+</header>
+  
+<main>
+  <p style="font-weight:bold">T I M E R</p>
+  <div class="items">
+    <div class="subitems">
+      <label for="hours">Hours</label>
+      <input class="tmr" type="number" id="hours" placeholder="00">
+    </div>
+    <div class="subitems">
+      <label for="minutes">Minutes</label>   
+      <input class="tmr" type="number" id="minutes" placeholder="00">        
+    </div>
+    <div class="subitems">
+      <label for="seconds">Seconds</label>
+      <input class="tmr" type="number" id="seconds" placeholder="00">
+    </div> 
+  </div>
+
+  <div class="buttons">
+    <button id="startbtn">START</button>
+    <button id="resetbtn" disabled="disabled">RESET</button>        
+  </div>
+
+  <div class="res">
+    <p id="msg">S E T U P</p>
+  </div>
+
+  <p style="font-weight:bold">S T O P W A T C H</p>
+  <div class="items">
+    <div class="lap">
+      <p class="stopwatch" id="stopwatch">00:00:00</p>
+    </div>
+  </div>
+
+  <div class="buttons">
+    <button id="lapbtn">GO</button>
+    <button id="stopbtn" disabled="disabled">STOP</button>        
+  </div>
+
+  <div class="res">
+    <p class="lapmsg" id="lapmsg">R E A D Y</p>
+    <ul id="lapslist"></ul>
+  </div>  
+    
+</main>
+<script src="/numbers/static/js/timer.js"></script>
+<script src="/numbers/static/js/stopwatch.js"></script>
+
+  <footer>
+  <p>Developed by thigoap. | 
+    <a target="_blank" href="https://github.com/thigoap"><i class="fab fa-github"></i></a>
+  </p>
+</footer> 
+</body>
+
+</html>
